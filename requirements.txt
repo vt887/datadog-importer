@@ -1,0 +1,2 @@
+datadog-api-client==2.44.0
+pytest>=7.0

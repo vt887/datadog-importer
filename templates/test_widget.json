@@ -1,0 +1,32 @@
+{
+  "title": "My Sample Dashboard",
+  "description": "This dashboard is auto-created via JSON file",
+  "widgets": [
+    {
+      "definition": {
+        "type": "timeseries",
+        "requests": [
+          {
+            "q": "avg:system.cpu.user{env:prod} by {host}",
+            "display_type": "line",
+            "style": {
+              "palette": "dog_classic",
+              "line_type": "solid",
+              "line_width": "normal"
+            }
+          }
+        ],
+        "title": "CPU user time (avg)"
+      },
+      "layout": {
+        "x": 0,
+        "y": 0,
+        "width": 12,
+        "height": 15
+      }
+    }
+  ],
+  "layout_type": "ordered",
+  "notify_list": [],
+  "template_variables": []
+}
